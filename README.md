@@ -2,6 +2,7 @@
 
 Multithreaded simulation of a trading environment for 10 year swaps.
 Orders are partially filled and the rest that are not are placed in the order book.
+Logging happens on each thread and is written to a file.
 
 Pricing by the clients are purposefully delayed via the simulation 
 method after the pricer has updated. When the pricer updates, new
@@ -11,7 +12,7 @@ the client's orders gravitate towards the new price.
 
 Run the jar and follow instructions:
 
-`java -jar jp_morgan.jar`
+`java -jar simulation.jar`
 
 ## Known improvements to be made
 - The entries at each price level in the order book are individual orders.
